@@ -16,7 +16,7 @@ class Song
     new_name = filename.split (" - ")
     artist = new_name[0]
     song = new_name[1]
-    @songs << new_song = Song.new(song)
+    new_song = Song.new(song)
     #binding.pry
     #@songs << new_song
     new_song.artist_name=(artist)
