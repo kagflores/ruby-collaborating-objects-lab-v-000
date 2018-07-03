@@ -20,7 +20,6 @@ class Song
     #binding.pry
     #@songs << new_song
     new_song.artist_name=(artist)
-    Artist.add_song(song)
     #artist.add_song(Song.new(song))
     new_song
     #self.all << new_song
@@ -33,5 +32,6 @@ class Song
     #Artist.song = self
     #call on artist instance to add_song
     self.artist = Artist.find_or_create_by_name(name)
+    @songs << self
   end
 end
