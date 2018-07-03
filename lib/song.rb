@@ -21,7 +21,7 @@ class Song
     #@songs << new_song
     new_song.artist_name=(artist)
     #artist.add_song(Song.new(song))
-    new_song.save
+    new_song
     #self.all << new_song
   end
 
